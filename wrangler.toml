@@ -1,0 +1,11 @@
+name = "paws-and-homes"
+pages_build_output_dir = "public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "paws-and-homes-db"
+database_id = "08085fbb-2163-488d-9afd-f4288219a121"
+
+[[r2_buckets]]
+binding = "UPLOADS"
+bucket_name = "paws-and-homes-uploads"
