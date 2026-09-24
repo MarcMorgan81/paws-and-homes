@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Paws and Homes — Find your next pet, without the fees</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#1F3A2E; --forest-light:#2E5240; --butter:#E8B923; --butter-dark:#C89614;
+  --cream:#FAF7F0; --card:#FFFFFF; --ink:#26261F; --ink-soft:#5B5A4E; --line:#E4DFD2;
+  --danger:#B3402A;
+  font-family:'Inter',sans-serif;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  box-sizing:border-box;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --cream:#181D19; --card:#212822; --ink:#F0EEE4; --ink-soft:#ABA99A; --line:#33392F; } }
+:root[data-theme="dark"]{ --cream:#181D19; --card:#212822; --ink:#F0EEE4; --ink-soft:#ABA99A; --line:#33392F; }
+*{box-sizing:border-box;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+body{margin:0;background:var(--cream);color:var(--ink);line-height:1.5;}
+h1,h2,h3,.display{font-family:'Fraunces',serif;}
+a{color:inherit;}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px;}
+header.site{background:var(--forest);color:#fff;padding:16px 0;position:sticky;top:0;z-index:20;padding-top:calc(16px + env(safe-area-inset-top,0px));}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:700;font-size:20px;letter-spacing:-0.02em;cursor:pointer;}
+.logo img{height:40px;width:40px;border-radius:50%;}
+.logo span{color:var(--butter);}
+nav.links{display:flex;gap:18px;font-size:15px;flex-wrap:wrap;}
+nav.links a{cursor:pointer;opacity:.9;text-decoration:none;padding:6px 2px;border-bottom:2px solid transparent;}
+nav.links a:hover{opacity:1;border-color:var(--butter);}
+.btn{border:none;border-radius:8px;padding:10px 16px;font-size:15px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;}
+.btn-primary{background:var(--butter);color:var(--forest);}
+.btn-primary:hover{background:var(--butter-dark);}
+.btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);}
+.btn-outline{background:transparent;color:var(--forest);border:1px solid var(--forest);}
+:root[data-theme="dark"] .btn-outline, :root:not([data-theme="light"]) .btn-outline{color:var(--ink);border-color:var(--ink-soft);}
+.userchip{font-size:14px;background:rgba(255,255,255,.12);padding:8px 12px;border-radius:20px;cursor:pointer;}
